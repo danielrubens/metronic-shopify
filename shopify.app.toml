@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "metronic"
+client_id = "fa9a8802977b59d5549a4f9bc08e878f"
+application_url = "https://federation-reel-sci-steven.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://federation-reel-sci-steven.trycloudflare.com/auth/callback",
+  "https://federation-reel-sci-steven.trycloudflare.com/auth/shopify/callback",
+  "https://federation-reel-sci-steven.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-1b549435.myshopify.com"
