@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "metronic"
+client_id = "be875e12f88b2ee5cb23209bb65b3b35"
+application_url = "https://conventions-thank-sensitivity-enabled.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://conventions-thank-sensitivity-enabled.trycloudflare.com/auth/callback",
+  "https://conventions-thank-sensitivity-enabled.trycloudflare.com/auth/shopify/callback",
+  "https://conventions-thank-sensitivity-enabled.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-1b549435.myshopify.com"
